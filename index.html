@@ -1,48 +1,75 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dandelion Beauty Care</title>
-    <style>
-        body {
-            background-color: #f5f0e6;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            max-width: 300px;
-            margin-top: 40px;
-        }
-        .links {
-            margin-top: 30px;
-        }
-        .links a {
-            display: block;
-            margin: 15px auto;
-            padding: 12px 25px;
-            width: 250px;
-            background-color: #d4b483;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-        .links a:hover {
-            background-color: #b8925e;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dandelion Beauty Care</title>
+<style>
+    body {
+        background-color: #f5f0e6;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .logo {
+        margin-top: 40px;
+    }
+    .logo img {
+        max-width: 180px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    .icons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .icons a {
+        display: inline-block;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .icons a img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+    .icons a:hover {
+        transform: scale(1.15);
+        box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
+    }
+    @keyframes fadeInUp {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+    .icons a {
+        animation: fadeInUp 0.8s ease forwards;
+    }
+</style>
 </head>
 <body>
-    <img src="logo.jpeg" alt="Dandelion Beauty Care Logo">
-    <div class="links">
-        <a href="https://wa.me/PHONE_NUMBER" target="_blank">WhatsApp</a>
-        <a href="https://instagram.com/USERNAME" target="_blank">Instagram</a>
-        <a href="https://facebook.com/USERNAME" target="_blank">Facebook</a>
-        <a href="https://maps.google.com/?q=31.905729,35.206657" target="_blank">Google Maps</a>
-    </div>
+
+<div class="logo">
+    <img src="logo.jpeg" alt="Dandelion Logo">
+</div>
+
+<div class="icons">
+    <a href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/message/XZ3474TFOGB7F1" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="https://maps.google.com/?q=31.905729,35.206657" target="_blank">
+        <img src="maps.png" alt="Google Maps">
+    </a>
+</div>
+
 </body>
 </html>
