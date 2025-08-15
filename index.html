@@ -1,70 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dandelion Beauty Care</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f6f2;
-            text-align: center;
-            padding: 20px;
-        }
-        .logo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 20px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #5a4634;
-            margin-top: 15px;
-        }
-        .link-button {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            background: white;
-            padding: 12px 20px;
-            margin: 15px auto;
-            width: 90%;
-            max-width: 400px;
-            border-radius: 12px;
-            box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
-            font-size: 18px;
-            text-decoration: none;
-            color: black;
-            transition: transform 0.2s;
-        }
-        .link-button:hover {
-            transform: scale(1.02);
-        }
-        .icon {
-            width: 30px;
-            height: 30px;
-            margin-left: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dandelion Beauty Care</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+    body {
+        font-family: 'Cairo', sans-serif;
+        background: linear-gradient(135deg, #fffef9, #fff8e7);
+        text-align: center;
+        padding: 20px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 20px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+        border: 3px solid #f5d77a;
+    }
+    h1 {
+        font-size: 28px;
+        margin: 15px 0;
+        color: #b18f47;
+    }
+    .link-button {
+        display: block;
+        width: 90%;
+        max-width: 350px;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    .link-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    }
+    .facebook { background: #1877f2; }
+    .instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
+    .whatsapp { background: #25d366; }
+    .location { background: #ff9800; }
+</style>
 </head>
 <body>
-    <img src="logo.jpg" alt="Logo" class="logo">
-    <h1>Dandelion Beauty Care</h1>
 
-    <a class="link-button" href="https://wa.me/message/XZ3474TFOGB7F1" target="_blank">
-        <img src="whatsapp.png" class="icon"> واتساب
-    </a>
-    <a class="link-button" href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" target="_blank">
-        <img src="instagram.png" class="icon"> إنستغرام
-    </a>
-    <a class="link-button" href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" target="_blank">
-        <img src="facebook.png" class="icon"> فيسبوك
-    </a>
-    <a class="link-button" href="https://maps.google.com/?q=31.905729,35.206657" target="_blank">
-        <img src="maps.png" class="icon"> الموقع على الخريطة
-    </a>
+<img src="logo.jpg" alt="Dandelion Logo" class="logo">
+<h1>Dandelion Beauty Care</h1>
+
+<a href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" class="link-button facebook" target="_blank">فيسبوك</a>
+<a href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" class="link-button instagram" target="_blank">إنستغرام</a>
+<a href="https://wa.me/message/XZ3474TFOGB7F1" class="link-button whatsapp" target="_blank">واتساب</a>
+<a href="https://maps.google.com/?q=31.905729,35.206657" class="link-button location" target="_blank">الموقع</a>
+
 </body>
 </html>
