@@ -1,75 +1,70 @@
 
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dandelion Beauty Care</title>
-<style>
-    body {
-        background-color: #f5f0e6;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-    .logo {
-        margin-top: 40px;
-    }
-    .logo img {
-        max-width: 180px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-    }
-    .icons {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
-    .icons a {
-        display: inline-block;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .icons a img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-    }
-    .icons a:hover {
-        transform: scale(1.15);
-        box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
-    }
-    @keyframes fadeInUp {
-        from {opacity: 0; transform: translateY(20px);}
-        to {opacity: 1; transform: translateY(0);}
-    }
-    .icons a {
-        animation: fadeInUp 0.8s ease forwards;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandelion Beauty Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6f2;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #5a4634;
+            margin-top: 15px;
+        }
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background: white;
+            padding: 12px 20px;
+            margin: 15px auto;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.2s;
+        }
+        .link-button:hover {
+            transform: scale(1.02);
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+    </style>
 </head>
 <body>
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <h1>Dandelion Beauty Care</h1>
 
-<div class="logo">
-    <img src="logo.jpeg" alt="Dandelion Logo">
-</div>
-
-<div class="icons">
-    <a href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" target="_blank">
-        <img src="facebook.png" alt="Facebook">
+    <a class="link-button" href="https://wa.me/message/XZ3474TFOGB7F1" target="_blank">
+        <img src="whatsapp.png" class="icon"> واتساب
     </a>
-    <a href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" target="_blank">
-        <img src="instagram.png" alt="Instagram">
+    <a class="link-button" href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" target="_blank">
+        <img src="instagram.png" class="icon"> إنستغرام
     </a>
-    <a href="https://wa.me/message/XZ3474TFOGB7F1" target="_blank">
-        <img src="whatsapp.png" alt="WhatsApp">
+    <a class="link-button" href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" target="_blank">
+        <img src="facebook.png" class="icon"> فيسبوك
     </a>
-    <a href="https://maps.google.com/?q=31.905729,35.206657" target="_blank">
-        <img src="maps.png" alt="Google Maps">
+    <a class="link-button" href="https://maps.google.com/?q=31.905729,35.206657" target="_blank">
+        <img src="maps.png" class="icon"> الموقع على الخريطة
     </a>
-</div>
-
 </body>
 </html>
