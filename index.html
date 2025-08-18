@@ -1,64 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dandelion Beauty Care</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dandelion Beauty Care</title>
+  <style>
+    :root{
+      --top:#4a4a4a;
+      --mid1:#9a7b5a;
+      --mid2:#c9ad85;
+      --mid3:#a8855f;
+      --low:#484039;
+      --bottom:#232323;
+      --text:#fff;
+      --muted:rgba(255,255,255,.8);
+      --card-bg:rgba(255,255,255,0.06);
+      --card-border:rgba(255,255,255,0.12);
+      --gold:#d4af37;
+    }
+
+    * {box-sizing: border-box;}
     body {
-        font-family: 'Cairo', sans-serif;
-        background: linear-gradient(135deg, #fffef9, #fff8e7);
-        text-align: center;
-        padding: 20px;
+      margin:0;
+      font-family: system-ui, "Segoe UI", Arial, sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,
+        var(--top) 0%,
+        var(--mid1) 32%,
+        var(--mid2) 55%,
+        var(--mid3) 70%,
+        var(--low) 86%,
+        var(--bottom) 100%);
+      background-attachment:fixed;
     }
-    .logo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-top: 20px;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
-        border: 3px solid #f5d77a;
+
+    header {
+      max-width:1200px;
+      margin:0 auto;
+      padding:16px;
     }
-    h1 {
-        font-size: 28px;
-        margin: 15px 0;
-        color: #b18f47;
+
+    header img {
+      width:100%;
+      height:auto;
+      border-radius:8px;
+      box-shadow:0 8px 24px rgba(0,0,0,.3);
     }
-    .link-button {
-        display: block;
-        width: 90%;
-        max-width: 350px;
-        margin: 15px auto;
-        padding: 15px;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    .hero {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:60px 20px 30px;
+      min-height:50vh;
     }
-    .link-button:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+
+    .hero .content {
+      max-width:700px;
+      background:var(--card-bg);
+      border:1px solid var(--card-border);
+      border-radius:12px;
+      padding:30px 20px;
+      backdrop-filter:blur(4px);
     }
-    .facebook { background: #1877f2; }
-    .instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
-    .whatsapp { background: #25d366; }
-    .location { background: #ff9800; }
-</style>
+
+    .hero h1 {
+      margin:0 0 15px;
+      font-size:2.2rem;
+    }
+
+    .hero p {
+      font-size:1.1rem;
+      color:var(--muted);
+      margin:0;
+    }
+
+    .social-links {
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+      margin:40px auto 20px;
+      max-width:300px;
+    }
+
+    .social-links a {
+      display:block;
+      text-decoration:none;
+      text-align:center;
+      padding:15px;
+      border-radius:8px;
+      font-size:1.1rem;
+      font-weight:bold;
+      color:#000;
+      background:var(--gold);
+      transition:all 0.3s ease;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+    }
+
+    .social-links a:hover {
+      transform:translateY(-3px);
+      box-shadow:0 6px 16px rgba(0,0,0,.35);
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      font-size:.9rem;
+      color:var(--muted);
+    }
+
+    @media (max-width:600px){
+      .hero {
+        padding:40px 15px 20px;
+      }
+      .hero h1 {font-size:1.6rem;}
+      .hero p {font-size:1rem;}
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="./assets/hero.jpg" alt="Dandelion Beauty Care">
+  </header>
 
-<img src="logo.jpg" alt="Dandelion Logo" class="logo">
-<h1>Dandelion Beauty Care</h1>
+  <section class="hero">
+    <div class="content">
+      <h1>مرحبًا بك في Dandelion 🌸</h1>
+      <p>هذا القسم مخصص لإضافة محتوى في وسط الصفحة. يمكنك تعديله لاحقًا لعرض معلومات أو صور أو خدمات.</p>
+    </div>
+  </section>
 
-<a href="https://www.facebook.com/dandelionbeautycare.ms?mibextid=ZbWKwL" class="link-button facebook" target="_blank">فيسبوك</a>
-<a href="https://www.instagram.com/dandelionbeautycare.ms?igsh=MXI1OWRjOGdmcWhmYw==" class="link-button instagram" target="_blank">إنستغرام</a>
-<a href="https://wa.me/message/XZ3474TFOGB7F1" class="link-button whatsapp" target="_blank">واتساب</a>
-<a href="https://maps.google.com/?q=31.905729,35.206657" class="link-button location" target="_blank">الموقع</a>
+  <section class="social-links">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#">Find us</a>
+  </section>
 
+  <footer>
+    © 2025 Dandelion Beauty Care
+  </footer>
 </body>
 </html>
